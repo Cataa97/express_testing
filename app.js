@@ -2,8 +2,9 @@ import express from "express";
 import router from "./routes/routes.js";
 import db from "./config/database.js";
 import cors from "cors";
+import Router from "./routes/routes.js";
+import AuthRouter from "./routes/auth.js"
 const app = express();
-// use express json
 app.use(express.json());
 
 // var corsOptions = {
@@ -11,7 +12,7 @@ app.use(express.json());
 // }
 app.use(cors());
 
-// Testing database connection
+
 
 try {
     await db.authenticate();
@@ -20,7 +21,7 @@ try {
     console.error('Unable to connect to the database:');
 }
 
-// use Router
 app.use(router);
+app.use(AuthRouter);
 
 app.listen(5000, () => console.log('Servidor corriendo en localhost 5000....'))
