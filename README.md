@@ -19,7 +19,7 @@ Actualizando Usuario:
 ![Image text](https://github.com/Cataa97/express_crud/blob/main/img/put.png)
 
 Eliminando Usuario:
-![Image text](https://github.com/Cataa97/express_crud/blob/main/delete.png)
+![Image text](https://github.com/Cataa97/express_crud/blob/main/del.png)
 
 Filtrando por ID:
 ![Image text](https://github.com/Cataa97/express_crud/blob/main/img/by_id.png)
