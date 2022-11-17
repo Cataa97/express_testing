@@ -13,7 +13,6 @@ app.use(express.json());
 app.use(cors());
 
 
-
 try {
     await db.authenticate();
     console.log('Connection has been established successfully.');
