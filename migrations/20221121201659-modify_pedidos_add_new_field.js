@@ -1,22 +1,20 @@
-
 'use strict';
 module.exports = {
   up(queryInterface, Sequelize) {
     return Promise.all([
       queryInterface.addColumn(
-        'productos', // creando nueva columna "retiro" tipo BOOLEAN con defaultvalue "true"
-        'retiros',
+        'pedidos', // creando nueva columna "retiro" tipo BOOLEAN con defaultvalue "true"
+        'enviados',
         {
           type: Sequelize.BOOLEAN,
-          defaultValue: true,
+          defaultValue: false,
         },
       ),
     ]);
   },
-
   down(queryInterface, Sequelize) {
     return Promise.all([
-      queryInterface.removeColumn('productos', 'retiros'),
+      queryInterface.removeColumn('pedidos', 'enviados'),
     ]);
   },
 };

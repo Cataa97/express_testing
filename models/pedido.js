@@ -7,7 +7,6 @@ import Producto from "./producto";
 const { DataTypes } = Sequelize;
 
 const Pedido = db.define('Pedido', {
-
     pedido_id: {
         type: DataTypes.INTEGER,
         primaryKey: true,

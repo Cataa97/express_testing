@@ -10,9 +10,10 @@ app.use(express.json());
 // var corsOptions = {
 //   origin: 'http://example.com',
 // }
+// app.use(helmet());
+
+
 app.use(cors());
-
-
 try {
     await db.authenticate();
     console.log('Connection has been established successfully.');
@@ -23,4 +24,6 @@ try {
 app.use(router);
 app.use(AuthRouter);
 
-app.listen(5000, () => console.log('Servidor corriendo en localhost 5000....'))
+app.listen(4000, () => console.log('Servidor corriendo en localhost 4000....'))
+
+export default app;

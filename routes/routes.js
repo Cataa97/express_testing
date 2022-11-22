@@ -8,7 +8,6 @@ import {
 } from "../controllers/producto.js";
 import { isUserAuthenticated } from "../middlewares/auth.js";
 
-
 const router = express.Router();
 
 router.get("/productos", isUserAuthenticated, getProductos);

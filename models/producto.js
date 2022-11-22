@@ -4,7 +4,6 @@ import db from "../config/database.js";
 const { DataTypes } = Sequelize;
 
 const Producto = db.define('producto', {
-
     producto_id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -20,7 +19,9 @@ const Producto = db.define('producto', {
     },
     producto_tipo: {
         type: DataTypes.STRING
-    },
+    }
+}, {
+    tableName: 'productos'
 
 });
 
