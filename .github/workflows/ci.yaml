@@ -1,6 +1,6 @@
 name: Express.js CI
 on:
-  pull request:
+  pull_request:
     branches: [main]
 
 jobs:
