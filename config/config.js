@@ -8,9 +8,9 @@ runDotEnv();
 const config = {
   development: {
     username: process.env.DB_DEV_USER || 'postgres',
-    password: process.env.DB_DEV_PASSWORD || '12345' ,
+    password: process.env.DB_DEV_PASSWORD || '12345',
     database: process.env.DB_DEV_DB_NAME || 'chocolateria',
-    host: process.env.DB_DEV_HOST || 'localhost' ,
+    host: process.env.DB_DEV_HOST || 'localhost',
     logging: console.log,
     dialect: 'postgres',
   },
@@ -24,10 +24,10 @@ const config = {
     dialect: 'postgres',
   },
   production: {
-    username: process.env.DB_DEV_USER || 'postgres',
-    password: process.env.DB_DEV_PASSWORD || '12345',
-    database: process.env.DB_DEV_DB_NAME || 'chocolateria',
-    logging: false, 
+    username: process.env.DB_DEV_USER,
+    password: process.env.DB_DEV_PASSWORD,
+    database: process.env.DB_DEV_DB_NAME,
+    logging: false,
     dialect: 'postgres',
   },
 };
