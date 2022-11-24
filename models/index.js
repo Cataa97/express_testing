@@ -14,8 +14,8 @@ const config = database[process.env.ENV];
 
 const sequelize = new Sequelize(
   config.database,
-  config.username,
-  config.password,
+  config.user_nombre,
+  config.user_password,
   {
     host: config.host,
     dialect: 'postgres',
