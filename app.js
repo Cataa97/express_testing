@@ -4,13 +4,14 @@ import db from "./config/database.js";
 import cors from "cors";
 import Router from "./routes/routes.js";
 import AuthRouter from "./routes/auth.js"
+import helmet from "helmet";
 const app = express();
 app.use(express.json());
 
 // var corsOptions = {
 //   origin: 'http://example.com',
 // }
-// app.use(helmet());
+app.use(helmet());
 
 
 app.use(cors());

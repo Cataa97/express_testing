@@ -39,10 +39,10 @@ describe('Test the auth endpoints', () => {
         }
         const { body, status } = await request(app).post('/auth/register').send(payload);
         expect(status).to.equal(400);
-        expect(body.message).contains('password must be at least 6 characters');
+        expect(body.message).contains('el password debe contener al menos 6 carácteres');
     });
 
-    it('should return 400 if email does not have an @ character', async () => {
+    it('email must contain @ character', async () => {
         const payload = {
             'user_nombre': 'test',
             'user_email': 'cata.test.com',

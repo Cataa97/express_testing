@@ -12,13 +12,13 @@ export const register = async (req, res) => {
 
         if (req.body.user_password.length < 6) {
             return res.status(400).send({
-                message: "password must be at least 6 characters"
+                message: "el password debe contener al menos 6 carácteres"
             });
         }
 
         if (!req.body.user_email.includes('@')) {
             return res.status(400).send({
-                message: "email must contain @ character"
+                message: "El correo debe contener @"
             });
         }
 
@@ -46,7 +46,7 @@ export const login = async (req, res) => {
         })
         if (!user) {
             return res.status(404).send({
-                message: `No user found with email ${req.body.user_email}`
+                message: `No se ha encontrado un usuario con este Email ${req.body.user_email}`
             });
         }
         const passwordIsValid = bcrypt.compareSync(
