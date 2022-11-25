@@ -15,7 +15,7 @@ const config = {
     password: process.env.DB_TEST_PASSWORD || '12345',
     database: process.env.DB_TEST_DB_NAME || 'chocolateria',
     host: process.env.DB_TEST_HOST || '127.0.0.1',
-    port: process.env.DB_TEST_PORT || 8080,
+    port: process.env.DB_TEST_PORT || 5432,
     logging: false,
     dialect: 'postgres',
   },
