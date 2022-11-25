@@ -1,7 +1,7 @@
 name: Express.js CI
 on:
   pull_request:
-    branches: [main]
+    branches: [ main ]
 
 jobs:
   test:
@@ -12,7 +12,7 @@ jobs:
         env:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: 12345
-          POSTGRES_DB: chocolateria
+          POSTGRES_DB: postgres
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
