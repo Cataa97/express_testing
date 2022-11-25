@@ -24,6 +24,4 @@ try {
 app.use(Router);
 app.use(AuthRouter);
 
-app.listen(8080, () => console.log('Servidor corriendo....'))
-
 export default app;
