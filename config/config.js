@@ -1,7 +1,6 @@
 import dotenv from 'dotenv';
 dotenv.config({ path: '.env' });
 
-runDotEnv();
 const config = {
   development: {
     username: process.env.DB_DEV_USER || 'postgres',
