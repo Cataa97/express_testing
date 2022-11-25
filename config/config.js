@@ -10,7 +10,7 @@ const config = {
     username: process.env.DB_DEV_USER || 'postgres',
     password: process.env.DB_DEV_PASSWORD || '12345',
     database: process.env.DB_DEV_DB_NAME || 'chocolateria',
-    host: process.env.DB_DEV_HOST || 'localhost',
+    host: process.env.DB_DEV_HOST || '127.0.0.1',
     logging: console.log,
     dialect: 'postgres',
   },
